@@ -17,12 +17,12 @@ class Contacts extends Component {
           const {contacts} = value;
           return(
             <React.Fragment>
-         {contacts.map(contact => (
-         < Contact  key={contact.id}
-         contact = {contact} 
-         />
-        ))} 
-          </React.Fragment>
+              {contacts.map(contact => (
+              < Contact  key={contact.id}
+              contact = {contact} 
+              />
+              ))} 
+           </React.Fragment>
           )
         }}
       </Consumer>
