@@ -7,18 +7,20 @@ import { Link } from 'react-router-dom';
 
 
  const Header = (props) => {
+  
    const {branding} = props;
   return (
-   <nav className="navbar navbar-expand-sm navbar-dark py-0 bg-danger">
+   <nav className="navbar navbar-expand-sm navbar-dark py-3 bg-danger">
      <div className="container">
-       <a href="/" className="navbar-brand">
+       <a href="/" className="navbar-brand" style={{fontSize:'1.5rem'}}>
          {branding}
        </a>
      </div>
-     <ul className="navbar-nav mr-auto">
+     <ul className="navbar-nav mr-auto" style={{fontSize:'1.3rem'}}>
         <li className="navbar-item">
          <Link to="/" className="nav-link">
-           <i className="fas fa-home">Home</i></Link>
+           <i className="fas fa-home"></i>
+           Home</Link>
         </li>
         
         <li className="navbar-item">
@@ -28,7 +30,9 @@ import { Link } from 'react-router-dom';
 
         <li className="navbar-item">
          <Link to="/contact/add" className="nav-link">
-           <i className="fas fa-address">Add Contact</i>
+         <i class="far fa-address-book">
+           Add Contact
+         </i>
            </Link>
         </li>
      </ul>

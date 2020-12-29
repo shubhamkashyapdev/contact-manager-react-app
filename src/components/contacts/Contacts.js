@@ -17,7 +17,7 @@ class Contacts extends Component {
           const {contacts} = value;
           return(
             <React.Fragment>
-              <h1 className="display-4 mb-2">
+              <h1 className="display-4 mt-4 mb-4" style={{textAlign:'center'}}>
                 <span className="text-danger">Contact</span> List
               </h1>
               <hr></hr>

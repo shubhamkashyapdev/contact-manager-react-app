@@ -26,8 +26,10 @@ class App extends Component {
       <Provider>
         <Router>
           <div className="App">
-          <Header branding="Contact Manager  1" />
-          
+          <Header branding="Contact Manager" />
+          <div  className="container mb-5">
+
+    
           <Switch>
             
              <Route exact path="/" component={Contacts} />
@@ -43,7 +45,7 @@ class App extends Component {
             <Route component={NotFound}></Route>
           </Switch>
 
-         
+          </div>
         
          </div>
         </Router>

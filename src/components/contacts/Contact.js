@@ -35,7 +35,7 @@ class Contact extends Component {
             <div className="card card-body mb-3">
             <h4>{name} 
             <i
-            style={{cursor: 'pointer'}}
+            style={{cursor: 'pointer',marginLeft:'.5rem'}}
             className="fas fa-sort-down"
             onClick={() => this.setState({showContactInfo: !this.state.showContactInfo})}
             ></i>
